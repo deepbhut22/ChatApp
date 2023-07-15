@@ -1,0 +1,188 @@
+.username{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+  padding: 20px;
+  font-size: 30px;
+  font-weight: 700;
+  width: 90%;
+  border-radius: 10px;
+  color: #1877f2;
+  margin: auto;
+  margin-bottom: 20px;
+  background-color: #4942E4;
+  color: white;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  height: 40px;
+  transition: all ease-in-out 0.35s;
+}
+
+.username:hover{
+  transform: scale(1.05);
+  background-color: rgb(168, 185, 200);
+  color: #4942E4;
+}
+
+.refresh{
+  width: 10%;
+  margin: auto;
+  text-align: center;
+  transition: all ease-in-out 0.35s;
+  margin-top: 10px;
+  border-radius: 50%;
+  margin-bottom: -5px;
+  
+}
+
+.refresh:hover{
+  transform: scale(1.03);
+  border-radius: 0;
+}
+
+.addconv{
+  display: flex;
+  width: 90%;
+  margin: auto;
+  padding-bottom: 20px;
+  align-items: center;
+  justify-content: space-around;
+  height: 50px;
+  font-size: larger;
+  font-weight: 700;
+  color: #2c83f5;
+  border-bottom: 2px solid gray;
+}
+
+.addconvButton{
+  height: 40px;
+  width: 100px;
+  border-radius: 10px;
+  background-color: #4942E4;
+  color: aliceblue;
+  border: 2px solid #4942E4;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all ease-in-out 0.35s;
+  font-size: 13px;
+}
+
+.addconvButton:hover{
+  background-color: aliceblue;
+  color: #4942E4;
+  border-radius: 30px;
+}
+
+.refreshButton{
+  margin-left: 10px;
+  font-weight: 700;
+  font-size: 20px;
+  color: #086ef5;
+  background-color: #4942E4;
+  border: 2px solid aliceblue;
+  border-radius: 30px;
+  padding-top: 6px;
+  border: none;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: all ease-in-out 0.7s;
+  margin: auto;
+}
+
+
+
+.refreshButton:hover{
+  transform: scale(-1);
+  /* border: 2px solid #086ef5; */
+}
+
+.addconvLabel{
+  font-size: larger;
+  color: rgb(88, 87, 87);
+  /* background-color: #086ef5; */
+}
+
+.btns{
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+}
+
+.conversation {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+  /* margin-top: 5px; */
+  margin: 15px 15px;
+  transition: all ease-in-out 0.3s;
+  border-bottom: 2px solid rgb(165, 165, 165);
+  }
+
+  .conversation:hover {
+    background-color: #4942E4;
+    color: aliceblue;
+    transform: scale(1.05);
+    border-radius: 20px;
+    z-index: 100;
+  }
+  .conversation:hover + .newmsgs{
+    background-color: white;
+  }
+  
+  .conversationImg {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+  }
+  
+  .profileImg {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+  }
+
+  .conversationName {
+    width: 80%;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .newmsgs{
+    background-color: lime;
+    border-radius: 100%;
+    height: 12px;
+    width: 12px;
+    margin-top: 8px;
+  }
+
+
+  .input{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+    /* padding: 0px 5px; */
+    width: 385px;
+    height: 50px;
+    margin: 15px 10px;
+    font-size: large;
+    border: none;
+    border-bottom: 2px solid #086ef5;
+    outline: none;
+    background-color: lightgray;
+    /* margin-bottom: 40px; */
+  }
+
+
+  @media screen and (max-width: 768px) {
+    .conversationName {
+      display: none;
+    }
+  } 
