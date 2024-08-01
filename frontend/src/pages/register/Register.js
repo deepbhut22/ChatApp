@@ -2,7 +2,7 @@ import React, { useContext, useRef } from "react";
 import "./register.css";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import { userContext } from "../../App";
+import { userContext } from "../../MainContext.js";
 
 function Register() {
   const { usm } = useContext(userContext);
@@ -14,11 +14,11 @@ function Register() {
 
   const registerCall = async (username, email, password) => {
     try {
-      const findUser = await axios.get("/api/v1/getuser/" + username);
+      // const findUser = await axios.get("/api/v1/getuser/" + username);
 
-      if (findUser) {
-        return alert("User Already Exists..!!!");
-      }
+      // if (findUser) {
+      //   return alert("User Already Exists..!!!");
+      // }
 
       const response = await axios.post("/api/v1/register", {
         username,

@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useRef, useState } from "react";
-import { userContext } from "../../App";
+import { userContext } from "../../MainContext.js";
 import { useNavigate } from "react-router-dom";
 import "./messenger.css";
 import axios from "axios";

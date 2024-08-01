@@ -1,7 +1,7 @@
 import React, { useContext, useRef } from "react";
 import "./addConversation.css";
 import axios from "axios";
-import { userContext } from "../../App";
+import { userContext } from "../../MainContext.js";
 
 function AddConversation() {
   const receiverUser = useRef();

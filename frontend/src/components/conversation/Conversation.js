@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import "./conversation.css";
-import { userContext } from "../../App";
+import { userContext } from "../../MainContext.js";
 import AddConversation from "../addConversation/AddConversation";
 import AddGroup from "../addGroup/AddGroup";
 import axios from "axios";
@@ -30,7 +30,7 @@ function Conversation() {
 
   var names = [];
 
-  const getConv = async (req, res) => {
+  const getConv = async () => {
     try {
       if (usm) {
         const response = await axios.get("/api/v1/getconv/" + usm);
@@ -42,19 +42,18 @@ function Conversation() {
     }
   };
 
-  const getGroups = async (req, res) => {
+  const getGroups = async () => {
     try {
       if (usm) {
         const response = await axios.get("/api/v1/getgroups/" + usm);
         setGrp(response.data);
-        // console.log(response);
       }
     } catch (err) {
       console.log(err);
     }
   };
 
-  const getPhotos = async (req, res) => {
+  const getPhotos = async () => {
     try {
       names.map(async (elm) => {
         const response = await axios.get("/api/v1/getuser/" + elm);
@@ -67,7 +66,7 @@ function Conversation() {
     }
   };
 
-  const getUserProfilePicture = async (req, res) => {
+  const getUserProfilePicture = async () => {
     try {
       const getImage = await axios.get("/api/v1/getuser/" + usm);
       setUsmImg(getImage.data.profilePicture);

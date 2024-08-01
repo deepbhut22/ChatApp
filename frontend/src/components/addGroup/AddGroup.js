@@ -1,5 +1,5 @@
 import React, { useRef, useContext, useState } from "react";
-import { userContext } from "../../App";
+import { userContext } from "../../MainContext.js";
 import axios from "axios";
 import "./addGroup.css";
 

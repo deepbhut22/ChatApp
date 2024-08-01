@@ -5,7 +5,9 @@ const fs = require("fs");
 exports.registerUser = async (req, res) => {
   try {
     const userExist = await User.findOne({ username: req.body.username });
-
+    console.log("here");
+    console.log(userExist);
+    
     if (userExist) {
       alert("User Already Registered");
       return res.status(422).json("Already Registered");

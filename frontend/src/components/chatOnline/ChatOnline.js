@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import "./chatOnline.css";
-import { userContext } from "../../App";
+import { userContext } from "../../MainContext.js";
 import Profile from "../profile/Profile";
 import axios from "axios";
 

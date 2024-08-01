@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import "./otherProfile.css";
-import { userContext } from "../../App";
+import { userContext } from "../../MainContext.js";
 import axios from "axios";
 
 const OtherProfile = () => {

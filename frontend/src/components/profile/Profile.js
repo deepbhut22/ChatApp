@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useRef, useState } from "react";
-import { userContext } from "../../App";
+import { userContext } from "../../MainContext.js";
 import "./profile.css";
 import OtherProfile from "../otherProfile/OtherProfile";
 import axios from "axios";
